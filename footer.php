@@ -1,7 +1,7 @@
 <footer class="footer">
 	<div class="container-fluid">
 		<div class="row">
-			
+			<h3>MAINSTORY - 2015 г.</h3>
 		</div>
 	</div>
 </footer>

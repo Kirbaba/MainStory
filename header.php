@@ -15,12 +15,12 @@
 	<header class="header">
 		<div class="container-fluid">
 			<div class="row">				 
-				<div class="col-lg-8 col-lg-offset-2 col-offet-md-2 col-md-8 col-sm-12 col-xs-12">
+				<div class="col-lg-8 col-lg-offset-2 col-md-offset-2 col-md-8 col-sm-6 col-sm-offset-3 col-xs-12">
 				  	<div class="header--logo">
 				  		<img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="">
 				  	</div>
 				</div>
-				<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
 					<div class="header--social">
 				  	<a href="#"><i class="fa fa-facebook"></i></a>
 				  	<a href="#"><i class="fa fa-instagram"></i></a>

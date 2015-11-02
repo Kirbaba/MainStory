@@ -14,5 +14,40 @@
 }
 
 @media only screen and (max-width: 500px) {
-	
+	.header {
+		height: auto;
+		line-height: normal;
+		img {
+			width: 40%;
+		}
+		&--social {
+			display: inline-block;
+			width: 100%;
+			line-height: normal;
+			border-left: none;
+			padding: 10px 0;
+		}
+	}
+	#wrapper {
+		padding-top: 0;
+		overflow: hidden;
+	}
+	.hamburger-slim {
+		display: block;
+	}
+	.sidebar-but {
+		display: block;
+		z-index: 9;
+	}
+	.about {
+		padding-top: 150px;
+		overflow: scroll;
+	}
+	.contacts {
+		padding-top: 150px;
+		overflow: scroll;
+	}
+	body {
+		overflow: hidden;
+	}
 }

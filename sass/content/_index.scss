@@ -18,6 +18,13 @@
 	     -o-background-size: cover;
 	        background-size: cover;
 	background-repeat: no-repeat;
+	padding-top: 100px;
+	p {
+		color: #FFF;
+		font-size: 14px;
+		text-align: center;
+		padding-bottom: 25px;
+	}
 }
 
 .contacts {
@@ -32,5 +39,71 @@
 	        background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50%;
+	padding-top: 75px;
+	i {
+		display: block;
+		margin: 10px auto;
+		font-size: 45px;
+		text-align: center;
+		color: #FFF;
+	}
+	p {
+		color: #FFF;
+		font-size: 12px;		
+	}
+	&--input {
+		width: 100%;
+		height: 26px;
+		border: 1px solid #cbcbcb;
+		@include border-radius(2px);
+		@include background-clip(padding-box);
+		background-color: #fff;
+		line-height: 26px;
+		font-size: 9px;
+		margin: 10px 0;
+		padding-left: 10px;
+	}
+	&--text {
+		width: 100%;
+		height: 128px;
+		border: 1px solid #cbcbcb;
+		@include border-radius(2px);
+		@include background-clip(padding-box);
+		background-color: #fff;
+		line-height: 26px;
+		font-size: 9px;
+		margin: 10px 0;
+		resize: none;
+		padding-left: 10px;
+	}
+	&--sub {
+		display: block;
+		margin: 25px auto;
+		width: 117px;
+		height: 30px;
+		@include border-radius(2px);
+		@include background-clip(padding-box);
+		background-color: #000;
+		line-height: 30px;
+		color: #fff;
+		font-size: 12px;
+		text-align: center;
+		border: none;
+		outline: none;
+		@include transition(0.5s);
+		&:hover {
+			background-color: rgba(0, 0, 0, .5);
+		}	
+	}
+	&--data {
+		margin-bottom: 25px;
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		p {
+			text-align: center;
+		}
+	}
 }
 
