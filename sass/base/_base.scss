@@ -1,0 +1,49 @@
+html,
+body,
+ {
+  height: 100%;
+  font-family: $cent;
+}
+#wraper {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding-bottom: 50px;
+}
+
+body {
+	background-color: #fff;
+}
+a {
+	text-decoration: none;
+	&:hover, &:focus, &:active{
+		outline: none;
+	}
+}
+
+ul {
+	list-style-type: none;
+}
+
+.block_title {
+	color: #fff;
+    font-size: 3.5em;
+	text-align: center;
+	margin-top: 15px;	
+}
+
+.p0  {
+	padding: 0;
+}
+
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+
+
+
+
+
+
