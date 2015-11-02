@@ -54,10 +54,37 @@ $(function() {
     });
 });
 
+jQuery(function($) {
 
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("toggled");
-});
-
-
+      jQuery('#module-video').YTPlayer({
+        fitToBackground: true,
+        videoId: 'UBDcpbDNxuM',
+        pauseOnScroll: false,
+        playerVars: {
+          modestbranding: 0,
+          autoplay: 1,
+          controls: 1,
+          showinfo: 0,
+          branding: 0,
+          rel: 0,
+          autohide: 0
+        }
+      });
+      
+      jQuery('#background-video').YTPlayer({
+        fitToBackground: false,
+        videoId: 'UBDcpbDNxuM',
+        pauseOnScroll: false,
+        playerVars: {
+          modestbranding: 0,
+          autoplay: 1,
+          controls: 1,
+          showinfo: 0,
+          branding: 0,
+          rel: 0,
+          autohide: 0
+        }
+      });
+    });
+      
+      

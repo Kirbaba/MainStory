@@ -3,25 +3,37 @@
 <div id="wrapper">
     <!-- Sidebar -->
     <div id="sidebar-wrapper">	
+    	<!-- <a href="#menu-toggle" class="hamburger-slim" id="menu-toggle"></a> -->
 		<!-- Nav tabs -->
 		<ul class="nav nav-pills">
 			<li class="active"><a href="#home" data-toggle="pill">Главная</a></li>
-			<li><a href="#profile" data-toggle="pill">Профиль</a></li>
-			<li><a href="#messages" data-toggle="pill">Сообщения</a></li>
+			<li><a href="#mainstory" data-toggle="pill">Main Story</a></li>
+			<li><a href="#contacts" data-toggle="pill">Контакты</a></li>
 
 		</ul>
 	</div>
 	<!-- /#sidebar-wrapper -->
 
 	<!-- Page Content -->
-	<div id="page-content-wrapper">
+	<div id="page-content-wrapper">				
 		<div class="container-fluid">
-
-			<!-- Tab panes -->
-			<div class="tab-content">
-				<div class="tab-pane active" id="home"> Tab 1</div>
-				<div class="tab-pane" id="profile"> Tab 2</div>
-				<div class="tab-pane" id="messages"> Tab 3</div>	
+			<div class="row">
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="home"> 
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/UBDcpbDNxuM?autoplay=1&controls=0&showinfo=0&disablekb=0&modestbranding=0" frameborder="0" allowfullscreen></iframe>						
+					</div>
+					<div class="tab-pane" id="mainstory">
+						<div class="about">
+							
+						</div>
+					</div>
+					<div class="tab-pane" id="contacts"> 
+						<div class="contacts">
+							
+						</div>
+					</div>	
+				</div>
 			</div>
 		</div>
 	</div>
