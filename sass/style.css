@@ -40,6 +40,16 @@ ul {
 .align-right {
   text-align: right; }
 
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.row {
+  margin-right: 0px; }
+
 .hamburger-slim {
   background: transparent;
   /* margin: 60px auto 40px; */
@@ -49,7 +59,7 @@ ul {
   display: block;
   float: left;
   position: absolute;
-  top: 10px;
+  top: 100px;
   left: 10px; }
   .hamburger-slim:before, .hamburger-slim:after {
     background: #000;
@@ -83,6 +93,33 @@ ul {
   width: 50px;
   height: 50px; }
 
+@media (max-width: 500px) {
+  .hamburger-slim {
+    top: 25px;
+    left: 25px;
+    width: 25px;
+    height: 30px; }
+    .hamburger-slim:before {
+      width: 25px;
+      top: 5px; }
+    .hamburger-slim:after {
+      width: 25px;
+      top: 12px; }
+    .hamburger-slim--active:before {
+      box-shadow: transparent 0 0 0 0;
+      top: 15px;
+      transform: rotate(225deg); }
+    .hamburger-slim--active:after {
+      top: 15px;
+      transform: rotate(315deg); }
+
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+    position: absolute;
+    background-color: #fff; }
+
+  #wrapper.toggled #page-content-wrapper {
+    width: 100%; } }
 .nav-pills > li {
   float: none;
   margin: 25px 0; }
@@ -110,12 +147,9 @@ ul {
 
 .header {
   display: block;
-  float: left;
   position: relative;
   width: 100%;
   background-color: #EBEBEB;
-  height: 160px;
-  margin-bottom: -160px;
   z-index: 9;
   line-height: 160px; }
   .header--logo {
@@ -152,11 +186,18 @@ ul {
         -o-transition: all 0.5s linear;
         transition: all 0.5s linear;
         color: red; }
+  .header .header-soc {
+    background-color: #fff; }
 
+.container-fluid {
+  padding-right: 0; }
+
+@media (min-width: 768px) {
+  .header .header-soc {
+    background-color: transparent; } }
 .tab-content {
   width: 100%;
-  height: 100%;
-  position: absolute; }
+  height: 100%; }
   .tab-content > .tab-pane {
     height: 100%; }
 
@@ -265,6 +306,18 @@ ul {
     .contacts--data p {
       text-align: center; }
 
+@media (max-width: 768px) {
+  .tab-content > .tab-pane {
+    padding-top: 0; }
+
+  #wrapper.toggled .tab-content {
+    width: 100%; }
+
+  #wrapper #sidebar-wrapper {
+    display: none; }
+
+  #wrapper.toggled #sidebar-wrapper {
+    display: inline-block; } }
 .footer {
   display: block;
   float: left;

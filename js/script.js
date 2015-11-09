@@ -29,6 +29,22 @@ function loadScript() {
 window.onload = loadScript;
 */
 
+$(document).ready(function(){
+  $wrapheight = $(".tab-pane.active").height();
+  // $("#wrapper, #page-content-wrapper").height($wrapheight);
+  $iwidth = $('iframe').width();
+  $('iframe').height($iwidth/2);
+  $("a[href^='#home']").click(function(){
+    setInterval (function(){
+    $iwidth = $('iframe').width();
+    $('iframe').height($iwidth/2);
+  }, 100);
+  });
+});
+$(window).resize(function(){
+  $iwidth = $('iframe').width();
+  $('iframe').height($iwidth/2);
+});
 
 $(function() {
 

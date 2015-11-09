@@ -7,11 +7,13 @@
 </footer>
     <!-- /#page-content-wrapper -->
     <script>
-        jQuery ("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            jQuery ("#wrapper").toggleClass("toggled");
-            jQuery ("#menu-toggle").toggleClass("hamburger-slim--active")
-        });
+      $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+          $("#menu-toggle").toggleClass("hamburger-slim--active");
+          $iwidth = $('iframe').width();
+          $('iframe').height($iwidth/2);
+    });
     </script>
 <?php wp_footer(); ?>
 </body>

@@ -16,11 +16,12 @@
 		<div class="container-fluid">
 			<div class="row">				 
 				<div class="col-lg-8 col-lg-offset-2 col-md-offset-2 col-md-8 col-sm-6 col-sm-offset-3 col-xs-12">
+					<a href="#menu-toggle" class="hamburger-slim" id="menu-toggle"></a>
 				  	<div class="header--logo">
 				  		<img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="">
 				  	</div>
 				</div>
-				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 header-soc">
 					<div class="header--social">
 				  	<a href="#"><i class="fa fa-facebook"></i></a>
 				  	<a href="#"><i class="fa fa-instagram"></i></a>
